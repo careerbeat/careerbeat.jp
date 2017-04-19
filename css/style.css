@@ -41,7 +41,7 @@ p {
 
 .section_title {
     padding-top: 90px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .section_title h2 {
     text-transform: uppercase;
@@ -78,6 +78,50 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.page {
+    border-bottom: 1px dashed #00AAE8;
+    position: relative;
+}
+.header.page::after,
+.header.page::before,
+.about.page::after,
+.about.page::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: -0;
+    background: none;
+}
+.page::before,
+.page::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 55px;
+    bottom: -23px;
+    background: url(../images/logo-solo.png) no-repeat;
+    background-size: 100%;
+}
+.page::after {
+    right: 0px;
+}
+.page::before {
+    left: 0px;
+}
+.spacer-10 {
+    height: 10px;
+}
+.spacer-30 {
+    height: 30px;
+}
+.spacer-50 {
+    height: 50px;
+}
+.spacer-100 {
+    height: 100px;
 }
 /*---------------------------------------
    SECTION HOME              
@@ -145,9 +189,6 @@ p {
     color: #00AAE8;
 }
 .header {
-    background: url(../images/home.jpg);
-    background-size: cover;
-	background-repeat: no-repeat;
 }
 .header .section_overlay {
     //background-color: rgba(33, 33, 33, .70);
@@ -157,6 +198,12 @@ p {
 }
 .logo img{
     opacity: 0;
+}
+.top-row img {
+    vertical-align: bottom;
+}
+.bottom-row img {
+    vertical-align: top;
 }
 .home-iphone{
     text-align: right;
@@ -266,6 +313,50 @@ tuor:visited {
     padding-left: 5px;
     color: #00AAE8;
 }
+.row-logo  {
+    position: relative;
+}
+.row-logo img {
+    position: absolute;
+    left: 0;
+}
+.row-upper img{
+    bottom: 0;
+    vertical-align: bottom;
+}
+.row-upper img:nth-child(1){
+    left: 1px;
+}
+.row-upper img:nth-child(2){
+    left: 131px;
+}
+.row-upper img:nth-child(3){
+    left: 176px;
+}
+.row-upper img:nth-child(4){
+    left: 263px;
+}
+.row-upper img:nth-child(5){
+    left: 393px;
+}
+.row-lower img:nth-child(1){
+    left: 0px;
+}
+.row-lower img:nth-child(2){
+    left: 65px;
+}
+.row-lower img:nth-child(3){
+    left: 153px;
+}
+.row-lower img:nth-child(4){
+    left: 219px;
+}
+.row-lower img:nth-child(5){
+    left: 350px;
+}
+.row-lower img:nth-child(6){
+    left: 457px;
+}
 
 
 
@@ -273,10 +364,27 @@ tuor:visited {
    SECTION ABOUT              
 -----------------------------------------*/
 
-
-
 .about {
-    background: #F1F1F1;
+
+}
+.about .desc {
+    position: relative;
+}
+.about .climber{
+    width: 430px;
+    height: 130px;
+    background: url(../images/logo-solo.png) no-repeat top right;
+    position: absolute;
+    bottom: -50px;
+    background-size: 93%;
+    right: 0;
+}
+.about .climber img{
+    width: 50px;
+    height: 62px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .inner_about_area {
     padding-top: 50px;
@@ -336,19 +444,12 @@ tuor:visited {
 .single_about_area:hover div i {
     color: #00AAE8;
 }
-.about_phone img {} @media (min-width: 991px) and (max-width: 1200px) {
-    .about_phone img {
-        margin-top: 184px;
-        width: 80%;
-        margin-right: 20%
-    }
-}
 /*---------------------------------------
    SECTION SERVICES              
 -----------------------------------------*/
 
 .services {
-    background-color: #f1f1f1
+
 }
 .services-list {
 
@@ -394,11 +495,30 @@ tuor:visited {
 }
 
 /*---------------------------------------
+   SECTION COMPANY              
+-----------------------------------------*/
+.company {
+
+}
+.company .company-container {
+    margin-bottom: 100px;
+}
+.company h3 span {
+    color: #00AAE8;
+}
+.company .office {
+    margin: 10px 0;
+}
+.company .office p {
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+/*---------------------------------------
    SECTION APPS SCREEN             
 -----------------------------------------*/
 
 .apps_screen {
-    background: #f1f1f1;
     padding-bottom: 96px;
 }
 .screen_slider {
@@ -426,151 +546,12 @@ tuor:visited {
    SECTION CONTACT              
 -----------------------------------------*/
 .contact {
-    background: url(../images/rice_field.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 .contact .section_overlay {
     background: rgba(0, 0, 0, .75);
     padding-top: 80px;
     padding-bottom: 80px;
-}
-.contact_form {
-    padding-top: 30px;
-    color: #fff;
-}
-.contact_form .form-control {
-    display: block;
-    display: block;
-    width: 100%;
-    height: 50px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: transparent;
-    border: 1px solid #aeaeae;
-    background-image: none;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    opacity: .8;
-     -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    outline: 0px !important;   
-
-}
-.contact_form .form-control:focus {
-    border: 1px solid #00AAE8;
-    border-color: #00AAE8;
-    outline: 0px none;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px rgba(102, 175, 233, 0.6);
-}
-.contact_form {} .form-control:-webkit-input-placeholder {
-    color: red;
-}
-.form-control:-moz-placeholder {
-    /* Firefox 18- */
-    
-    color: red;
-}
-.form-control:-moz-placeholder {
-    /* Firefox 19+ */
-    
-    color: red;
-}
-.form-control:-ms-input-placeholder {
-    color: red;
-}
-.submit-btn,
-.submit-btn:active,
-.submit-btn:focus,
-.submit-btn:visited {
-    background-color: transparent;
-    border: 1px solid #00AAE8;
-    border-radius: 4px;
-    width: 100%;
-    height: 50px;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #00AAE8;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    outline: 0px !important;
-}
-.submit-btn:hover {
-    background-color: #00AAE8;
-    color: #fff;
-    border-color: #00AAE8;
-}
-.social_icons {
-    padding-top: 50px;
-    padding-bottom: 70px;
-}
-.social_icons ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.social_icons ul li {
-    list-style: none;
-    display: inline;
-    padding-left: 10px
-}
-.social_icons ul li a {
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #9d9d9d;
-    border-radius: 3px;
-    width: 45px;
-    height: 45px;
-    line-height: 49px;
-    color: #9d9d9d;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-.social_icons ul li a i {
-    font-size: 20px;
-}
-.social_icons ul li a:hover {
-    background: #00AAE8;
-    border: 1px solid #00AAE8;
-    color: #fff
-}
-.error {
-    color: #00AAE8;
-    display: block;
-    padding-bottom: 15px;
-    font-size: 18px
-}
-.error i {
-    padding-right: 10px;
-    font-size: 18px
-}
-.Sucess {
-    color: #4DB849;
-    display: block;
-    padding-bottom: 15px;
-    font-size: 18px;
-    text-align: center;
-}
-.Sucess i {
-    padding-right: 10px;
-    font-size: 18px;
-    color: #4DB849
-}
-.contact_form .form-control {
-    color: #3d3d3d;
-}
-#message {
-    height: 117px;
-    resize: none;
 }
 /*---------------------------------------
    SECTION FOOTER              
