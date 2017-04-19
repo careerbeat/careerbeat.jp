@@ -313,52 +313,6 @@ tuor:visited {
     padding-left: 5px;
     color: #00AAE8;
 }
-.row-logo  {
-    position: relative;
-}
-.row-logo img {
-    position: absolute;
-    left: 0;
-}
-.row-upper img{
-    bottom: 0;
-    vertical-align: bottom;
-}
-.row-upper img:nth-child(1){
-    left: 1px;
-}
-.row-upper img:nth-child(2){
-    left: 131px;
-}
-.row-upper img:nth-child(3){
-    left: 176px;
-}
-.row-upper img:nth-child(4){
-    left: 263px;
-}
-.row-upper img:nth-child(5){
-    left: 393px;
-}
-.row-lower img:nth-child(1){
-    left: 0px;
-}
-.row-lower img:nth-child(2){
-    left: 65px;
-}
-.row-lower img:nth-child(3){
-    left: 153px;
-}
-.row-lower img:nth-child(4){
-    left: 219px;
-}
-.row-lower img:nth-child(5){
-    left: 350px;
-}
-.row-lower img:nth-child(6){
-    left: 457px;
-}
-
-
 
 /*---------------------------------------
    SECTION ABOUT              
