@@ -248,6 +248,16 @@ p {
     font-size: 100px;
     line-height: 120px;
 }
+@media (max-width: 768px){
+    .home-text.home-text1 h1 {
+    font-size: 20px;
+    line-height: 40px;
+    }
+    .home-text.home-text2 h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
 .scroll-container {
     width: 100%;
     position: absolute;
@@ -340,6 +350,24 @@ tuor:visited {
     left: 0;
     bottom: 0;
 }
+@media (max-width: 768px){
+    .about .climber {
+        width: 300px;
+        height: 100px;
+        background: url(../images/logo-solo.png) no-repeat top right;
+        position: absolute;
+        bottom: -80px;
+        background-size: 103%;
+        right: 0;
+    }
+    .about .climber img{
+        width: 40px;
+        height: 50px;
+        position: absolute;
+        left: -40px;
+        bottom: 0;
+    }
+}
 .inner_about_area {
     padding-top: 50px;
 }
@@ -352,6 +380,7 @@ tuor:visited {
     font-size: 30px;
     line-height: 37px;
     position: relative;
+    text-align: center;
 }
 .inner_about_title h2:after {
     content: "";
@@ -446,6 +475,43 @@ tuor:visited {
     font-size: 40px;
     font-weight: bold;
 }
+}
+
+.voices-title h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 37px;
+    position: relative;
+    text-align: center;
+}
+.voices-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 60px;
+    height: 1px;
+    background-color: #00AAE8;
+    left: 50%;
+    margin-left: -30px;
+}
+.voice-dit {
+    margin-top: 50px;
+    height:150px;
+}
+.voice-client {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-right: 30px;
+    border: 2px solid #00AAE8;
+    border-radius: 50%;
+}
+.voice-message {
+    float: left;
+    height: 100px;
+    width: 800px;
+    
 }
 
 /*---------------------------------------
