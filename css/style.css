@@ -495,23 +495,45 @@ tuor:visited {
     left: 50%;
     margin-left: -30px;
 }
-.voice-dit {
+.voice {
     margin-top: 50px;
     height:150px;
 }
-.voice-client {
+.voice-person {
     float: left;
-    height: 100px;
+    height: 150px;
     width: 100px;
     margin-right: 30px;
+}
+.voice-pic {
+    height: 100px;
+    width: 100px;
     border: 2px solid #00AAE8;
     border-radius: 50%;
 }
+.voice-label {
+
+}
 .voice-message {
     float: left;
-    height: 100px;
-    width: 800px;
+    height: 150px;
+    width: 600px;
     
+}
+@media (max-width: 1000px){
+.voice-person {
+    float: none;
+    height: 150px;
+    width: 100px;
+    margin: 0 auto;
+}
+.voice-label {
+
+}
+.voice-message {
+    float: none;
+    margin: 0 auto;
+    height: 150px;
 }
 
 /*---------------------------------------
