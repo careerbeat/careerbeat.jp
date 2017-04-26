@@ -573,6 +573,13 @@ tuor:visited {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+.contact .contact-method {
+    margin-top: 40px;
+}
+.contact .contact-method img {
+    width: 65px;
+    height: 65px;
+}
 /*---------------------------------------
    SECTION FOOTER              
 -----------------------------------------*/
